@@ -1,0 +1,5 @@
+#!/command/with-contenv sh
+
+echo "starting tinyproxy"
+exec /usr/bin/tinyproxy -d; 
+

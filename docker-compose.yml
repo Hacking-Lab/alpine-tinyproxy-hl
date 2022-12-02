@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  alpine-tinyproxy-hl:
+    build: .
+    image: hackinglab/alpine-tinyproxy-hl:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    ports:
+      - 8888:8888
+    volumes:
+      - ./share/tinyproxy.conf:/etc/tinyproxy/tinyproxy.conf
+      - ./share/filter:/etc/tinyproxy/filter
+
+
+
+
