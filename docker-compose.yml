@@ -1,7 +1,7 @@
 version: '3.6'
 
 services:
-  alpine-tinyproxy-hl:
+  alpine-tinyproxy:
     build: .
     image: hackinglab/alpine-tinyproxy-hl:3.2
     environment:
