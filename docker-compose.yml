@@ -9,10 +9,6 @@ services:
     - HL_USER_USERNAME=hacker
     ports:
       - 8888:8888
-    volumes:
-      - ./share/tinyproxy.conf:/etc/tinyproxy/tinyproxy.conf
-      - ./share/filter:/etc/tinyproxy/filter
-
 
 
 
